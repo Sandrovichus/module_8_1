@@ -2,12 +2,7 @@ def add_everything_up(a, b):
     try:
         result = a + b
     except TypeError:
-        if type(a) is int or type(a) is float:
-            a = str(a)
-            result = a + b
-        else:
-            b = str(b)
-            result = a + b
+        result = str(a) + str(b)
     return result
 
 
